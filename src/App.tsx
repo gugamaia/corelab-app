@@ -1,12 +1,14 @@
-import React from 'react';
-
+import { Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
 function App() {
-  return (
-    <div className="App">
-      Corelab-App
-    </div>
-  );
+  return <Container>
+    <Routes>
+      <Route path="/" element={<Home /} />
+      <Route path="/" element={<Store /} />
+      <Route path="/" element={<About /} />
+    </Routes>
+  </Container>
 }
 
 export default App;
